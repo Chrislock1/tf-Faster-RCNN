@@ -9,7 +9,7 @@ Created on Wed May  3 14:02:22 2017
 from .faster_rcnn_config import cfg
 
 import numpy as np
-from scipy.misc import imread
+from scipy.ndimage import imread
 
 ###############################################################################
 # Image processing functions
@@ -18,7 +18,7 @@ from scipy.misc import imread
 def read_image(image_file):
 
     if cfg.IMAGE_BITDEPTH == 8:
-        return imread(image_file)
+        return imread (image_file)
     else:
         # If not 8-bit, implement your image reader for your data here, 
         # and comment out the NotImplementedError exception 

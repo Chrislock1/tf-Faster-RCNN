@@ -258,7 +258,7 @@ __C.USE_DIFFICULT = False
 
 if spawn.find_executable("nvcc"):
     # Use GPU implementation of non-maximum suppression
-    __C.USE_GPU_NMS = True
+    __C.USE_GPU_NMS = False
 
     # Default GPU device id
     __C.GPU_ID = 0
